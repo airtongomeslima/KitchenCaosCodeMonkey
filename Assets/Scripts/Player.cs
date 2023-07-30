@@ -12,7 +12,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
     public class OnSelectedCounterChangedEventArgs : EventArgs
     {
-        public ClearCounter selectedCounter;
+        public BaseCounter selectedCounter;
     }
 
     [SerializeField] private float moveSpeed = 7f;
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     private bool isWalking = false;
     private Vector3 lastMoveDirection;
 
-    private ClearCounter selectedCounter;
+    private BaseCounter selectedCounter;
 
     [SerializeField] private Transform kitchenObjectHoldPoint;
     private KitchenObject kitchenObject;
@@ -84,7 +84,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         //Caso seja do tipo ClearCounter, chama o método Interact
         if (Physics.Raycast(transform.position, lastMoveDirection, out RaycastHit raycastHit, interactDistance, counterLayerMask))
         {
-            if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
+            if (raycastHit.transform.TryGetComponent(out BaseCounter clearCounter))
             {
                 // Has ClearCounter
                 if (clearCounter != selectedCounter)
@@ -105,7 +105,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
 
     }
 
-    private void SetSelectedCounter(ClearCounter selectedCounter)
+    private void SetSelectedCounter(BaseCounter selectedCounter)
     {
         //Chama o evento OnSelectedCounterChanged com o selectedCounter atual
         this.selectedCounter = selectedCounter;
