@@ -133,7 +133,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         {
             //Tenta se mover na direção X
             Vector3 moveDirX = new Vector3(moveDir.x, 0, 0).normalized;
-            canMove = CanMove(moveDirX, moveDistance);
+            canMove = moveDir.x != 0 && CanMove(moveDirX, moveDistance);
             if (canMove)
             {
                 //Define a direção de movimento como a direção X
@@ -143,7 +143,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
             {
                 //Tenta se mover na direção Z
                 Vector3 moveDirZ = new Vector3(0f, 0f, moveDir.z).normalized;
-                canMove = CanMove(moveDirZ, moveDistance);
+                canMove = moveDir.z != 0 && CanMove(moveDirZ, moveDistance);
                 if (canMove)
                 {
                     //Define a direção de movimento como a direção Z
