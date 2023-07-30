@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterTopPoint: {fileID: 3683849087708672623}
-  kitchenObjectSO: {fileID: 11400000, guid: 398860b9ed7c0c244b54c22e18f68743, type: 2}
+  kitchenObjectSO: {fileID: 0}
 --- !u!4 &5217630660244991312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 154389393479911029, guid: 775d34d80af798f43aa5ea27490b61a7,
@@ -371,6 +371,16 @@ PrefabInstance:
     - target: {fileID: 4589716710238282923, guid: 9a9137fa2b035d34e881701d2c178192,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841286013473667211, guid: 9a9137fa2b035d34e881701d2c178192,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841286013473667211, guid: 9a9137fa2b035d34e881701d2c178192,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
