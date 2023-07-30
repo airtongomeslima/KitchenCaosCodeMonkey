@@ -27,7 +27,7 @@ public class KitchenObject : MonoBehaviour
             Debug.LogError("Counter already has a kitchen object");
         }
 
-        this.clearCounter.SetKitchenObject(this);
+        clearCounter.SetKitchenObject(this);
 
         //Muda o parent do objeto para o novo Parente e zera a posição para centralizar
         transform.parent = clearCounter.GetCounterTopPoint();

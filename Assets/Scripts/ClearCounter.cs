@@ -52,11 +52,7 @@ public class ClearCounter : MonoBehaviour
 
     public void ClearKitchenObject()
     {
-        if (kitchenObject != null)
-        {
-            Destroy(kitchenObject.gameObject);
-            kitchenObject = null;
-        }
+        kitchenObject = null;
     }
 
     public bool HasKitchenObject()

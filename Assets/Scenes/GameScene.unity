@@ -756,7 +756,7 @@ PrefabInstance:
     - target: {fileID: 154389393479910923, guid: 461d10cb7c6c38748af9f1a3b937f88d,
         type: 3}
       propertyPath: m_Name
-      value: ClearCounter (1)
+      value: CounterB
       objectReference: {fileID: 0}
     - target: {fileID: 154389393479911029, guid: 461d10cb7c6c38748af9f1a3b937f88d,
         type: 3}
@@ -1072,7 +1072,7 @@ PrefabInstance:
     - target: {fileID: 154389393479910923, guid: 461d10cb7c6c38748af9f1a3b937f88d,
         type: 3}
       propertyPath: m_Name
-      value: ClearCounter
+      value: CounterA
       objectReference: {fileID: 0}
     - target: {fileID: 154389393479911029, guid: 461d10cb7c6c38748af9f1a3b937f88d,
         type: 3}
